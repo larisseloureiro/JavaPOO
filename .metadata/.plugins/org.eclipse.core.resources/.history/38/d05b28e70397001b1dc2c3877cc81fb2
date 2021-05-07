@@ -1,0 +1,47 @@
+import java.util.List;
+import java.util.Random;
+
+public class Mago extends Personagem{
+ private List<String> magia;
+ 
+public Mago() {
+	super();
+}
+
+//DELETAR OQ NAO USA
+public Mago(String nome, int vida, int mana, int inteligencia, int forca, int level, float xp , List<String> magia) {
+	super(nome, vida, mana, inteligencia, forca, level, xp);
+	this.magia = magia;
+}
+public List<String> getMagia() {
+	return magia;
+}
+
+public void setMagia(List<String> magia) {
+	this.magia = magia;
+}
+
+@Override
+public void lvlUp() {
+	this.setMana(getMana()+1);
+	this.setInteligencia(getInteligencia()+2);
+}
+public void attack() {
+	Random nRandom = new Random();
+	int valorMago = (getInteligencia() * getLevel()) + nRandom.nextInt(300)+0;
+}
+public String aprenderMagia() {
+	if(getInteligencia() > 0 && getInteligencia() <= 10) {
+		magia.add("Surto");
+	} else if (getInteligencia() > 11 && getInteligencia() <=20) {
+		magia.add("Rally");
+	} else  {
+		magia.add("Promover");
+		magia.add("Surto");
+		magia.add("Rally");
+	}
+	return "Continue..!";
+}
+  
+ 
+}

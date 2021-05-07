@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Pessoa p = new Pessoa("João", 15);
+		Pessoa p1 = new Pessoa("Leandro", 21);
+		Pessoa p2 = new Pessoa("Paulo", 17);
+		Pessoa p3 = new Pessoa("Jessica", 18);
+		List<Pessoa> person = new ArrayList<>();
+		person.add(p);
+		person.add(p1);
+		person.add(p2);
+		person.add(p3);
+		
+	 person.sort((pa,pb) -> pa.getIdade() > pb.getIdade() ? 1 : -1);
+
+	System.out.println("Pessoa mais velha do grupo é: " + person.get(person.size()-1).getNome());
+	}
+
+}

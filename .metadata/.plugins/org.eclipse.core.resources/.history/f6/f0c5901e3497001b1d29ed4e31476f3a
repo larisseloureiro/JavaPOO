@@ -1,0 +1,33 @@
+import java.util.List;
+
+public class Informacoes  {
+	protected String nome;
+	protected int idade;
+	
+	protected  List<Integer> pessoa; 
+	
+	public Informacoes() {
+		super();
+		
+	}
+	public Informacoes(String string, int i) {
+		// TODO Auto-generated constructor stub
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public int getIdade() {
+		return idade;
+	}
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+	public void addNome(){
+		
+	}
+	
+	
+}

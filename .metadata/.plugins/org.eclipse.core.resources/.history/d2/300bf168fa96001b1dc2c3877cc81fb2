@@ -1,0 +1,34 @@
+import java.util.List;
+
+public class Mago extends Personagem{
+ private List<String> magia;
+ 
+public Mago() {
+	super();
+}
+
+public Mago(String nome, int vida, int mana, int inteligencia, int forca, int level, float xp , List<String> magia) {
+	super(nome, vida, mana, inteligencia, forca, level, xp);
+	this.magia = magia;
+}
+public List<String> getMagia() {
+	return magia;
+}
+
+public void setMagia(List<String> magia) {
+	this.magia = magia;
+}
+
+@Override
+public void lvlUp() {
+	this.setMana(getMana()+1);
+}
+public void attack() {
+	
+}
+public String aprenderMagia() {
+	return "";
+}
+  
+ 
+}

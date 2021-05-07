@@ -1,0 +1,84 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+ //FAZER ATTACK E O TAL DE STATIC
+	public static void main(String[] args) {
+		
+		List<String> magia = new ArrayList<>();
+		
+		Mago mago = new Mago("Racer", 1, 2, 1, 2,1, 1.5f,magia);
+		mago.lvlUp();
+		mago.aprenderMagia();
+		
+		System.out.println("--------------Mago " + mago.getNome()+ " --------------");
+		System.out.println("Nome: " + mago.getNome() + " Vida:  " + mago.getVida() + 
+							" Mana: " + mago.getMana() +
+							" Inteligência: " + mago.getInteligencia() +
+							" Força: " + mago.getForca() +
+							" Level: " + mago.getLevel() +
+							" XP: " + mago.getXp() +
+							" Magia: " + mago.getMagia()+
+							" Ataque: " + mago.attack());
+		
+		Mago mago1 = new Mago("Razer", 1, 2, 15, 2,1, 1.5f,magia);
+		mago1.lvlUp();
+		mago1.aprenderMagia();
+		
+		System.out.println("--------------Mago " + mago1.getNome()+ " --------------");
+		System.out.println("Nome: " + mago1.getNome() + " Vida:  " + mago1.getVida() + 
+							" Mana: " + mago1.getMana() +
+							" Inteligência: " + mago1.getInteligencia() +
+							" Força: " + mago1.getForca() +
+							" Level: " + mago1.getLevel() +
+							" XP: " + mago1.getXp() +
+							" Magia: " + mago1.getMagia()+
+							" Ataque: " + mago1.attack() );
+		
+		Mago mago2 = new Mago("DX",10, 3, 21, 40,1, 2.5f,magia);
+		mago2.lvlUp();
+		mago2.aprenderMagia();
+		
+		System.out.println("-------------------------------------------------- Mago " + mago2.getNome()+ " -------------------------------------------------");
+		System.out.println("Nome: " + mago2.getNome() + " Vida:  " + mago2.getVida() + 
+							" Mana: " + mago2.getMana() +
+							" Inteligência: " + mago2.getInteligencia() +
+							" Força: " + mago2.getForca() +
+							" Level: " + mago2.getLevel() +
+							" XP: " + mago2.getXp() +
+							" Magia: " + mago2.getMagia() +
+							" Ataque: " + mago2.attack());
+		
+		List<String> habilidade = new ArrayList<>();
+		
+		Guerreiro guerreiro = new Guerreiro("Ocean",11,2,10,20,15,2.3f,habilidade );
+		guerreiro.lvlUp();
+		guerreiro.aprenderHabilidade();
+		
+		System.out.println("----------------------------------------------- Guerreiro " + guerreiro.getNome()+ " ---------------------------------------------");
+		System.out.println("Nome: " + guerreiro.getNome() + " Vida:  " + guerreiro.getVida() + 
+				" Mana: " + guerreiro.getMana() +
+				" Inteligência: " + guerreiro.getInteligencia() +
+				" Força: " + guerreiro.getForca() +
+				" Level: " + guerreiro.getLevel() +
+				" XP: " + guerreiro.getXp() +
+				" Habilidade: " + guerreiro.getHabilidade() +
+				" Ataque: " + guerreiro.attack());
+		
+		
+		Guerreiro guerreiro1 = new Guerreiro("WEEEE",11,2,5,2,5,2.3f,habilidade );
+		guerreiro1.lvlUp();
+		guerreiro1.aprenderHabilidade();
+		System.out.println("----------------------------------------------- Guerreiro " + guerreiro1.getNome()+ " --------------------------------------------");
+		System.out.println("Nome: " + guerreiro1.getNome() + 
+				" Vida:  " + guerreiro1.getVida() + 
+				" Mana: " + guerreiro1.getMana() +
+				" Inteligência: " + guerreiro1.getInteligencia() +
+				" Força: " + guerreiro1.getForca() +
+				" Level: " + guerreiro1.getLevel() +
+				" XP: " + guerreiro1.getXp() +
+				" Habilidade: " + guerreiro1.getHabilidade() +
+				" Ataque: " + guerreiro1.attack());
+	}
+
+}

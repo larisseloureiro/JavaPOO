@@ -1,0 +1,15 @@
+import java.util.List;
+
+public class Mago extends Personagem{
+ private List<String> magia;
+
+public List<String> getMagia() {
+	return magia;
+}
+
+public void setMagia(List<String> magia) {
+	this.magia = magia;
+}
+  
+ 
+}

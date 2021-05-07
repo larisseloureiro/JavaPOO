@@ -1,0 +1,25 @@
+package Ex01;
+
+//import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Veiculo veic = new Veiculo();
+		//Scanner sc = new Scanner(System.in);
+		
+		veic.pintar("Prata");
+		
+		veic.ligar();
+		veic.acelerar();
+		veic.acelerar();
+		veic.desligar();
+		veic.frear();
+		veic.frear();
+		veic.desligar();
+		veic.abastecer(61);
+		veic.abastecer(59);
+		
+	}
+
+}

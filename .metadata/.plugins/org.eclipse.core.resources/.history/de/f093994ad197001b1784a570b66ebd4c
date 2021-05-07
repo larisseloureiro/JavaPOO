@@ -1,0 +1,12 @@
+
+public class Supervisor extends Funcionario{
+
+	public Supervisor(String nome, int idade, double salario) {
+		super(nome, idade, salario);
+		// TODO Auto-generated constructor stub
+	}
+	public double bonificacao() {
+		return salario + 5000.00;
+	}
+
+}

@@ -1,0 +1,12 @@
+package main;
+
+import model.Livro;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Livro l = new Livro();
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package Ex01;
+
+//import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Veiculo veic = new Veiculo();
+		//Scanner sc = new Scanner(System.in);
+		
+		veic.pintar("Azul" );
+		veic.getCor();
+	}
+
+}

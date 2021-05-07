@@ -1,0 +1,41 @@
+import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
+
+public class Guerreiro extends Personagem {
+	private List<String> habilidade;
+
+	public Guerreiro(String nome, int vida, int mana, int inteligencia, int forca, int level, float xp,
+			List<String> habilidade) {
+		super(nome, vida, mana, inteligencia, forca, level, xp);
+		this.habilidade = habilidade;
+	}
+	
+	public List<String> getHabilidade() {
+		return habilidade;
+	}
+	public void setHabilidade(List<String> habilidade) {
+		this.habilidade = habilidade;
+	}
+	
+	@Override
+	public void lvlUp() {
+		this.setVida(getVida() + 1);
+		this.setForca(getForca() + 3);
+	}
+
+	public int attack() { 
+		return (getForca() * getLevel()) + ThreadLocalRandom.current().nextInt(0, 301);
+
+	}
+
+	public String aprenderHabilidade() {
+		if (getLevel() > 0 && getLevel() <= 10) {
+			habilidade.add("Voar");
+		} else if(getLevel() > 10 && getLevel() <= 20) {
+			habilidade.add("Green");
+		}else {
+			habilidade.add("Brutt");
+		}
+		return null;
+	}
+}

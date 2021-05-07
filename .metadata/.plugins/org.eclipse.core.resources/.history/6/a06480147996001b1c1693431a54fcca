@@ -1,0 +1,22 @@
+package main;
+
+import model.Livro;
+import model.VideoGame;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Livro l = new Livro();
+		l.setPreco(30.0);
+		l.setTema("comedia");
+		
+		VideoGame vg = new VideoGame();
+		vg.setPreco(30.0);
+		vg.setIsUsado(false);
+		
+		System.out.println(l.calculaImposto());
+		System.out.println(vg.calculaImposto());
+		
+	}
+
+}

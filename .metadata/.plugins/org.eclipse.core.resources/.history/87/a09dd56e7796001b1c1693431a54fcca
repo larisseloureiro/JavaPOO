@@ -1,0 +1,8 @@
+package main;
+
+import model.Livro;
+
+public class Main {
+	Livro livro = new Livro();
+	
+}

@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\lelo\OneDrive - GFT Technologies SE\Desktop\Java_POO\.metadata\.plugins\org.eclipse.jdt.core
+3665306435.index
+2910786517.index
+857441910.index
+1131508473.index
+2853361612.index
+580905358.index

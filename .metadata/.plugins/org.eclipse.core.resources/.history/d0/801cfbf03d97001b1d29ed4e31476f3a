@@ -1,0 +1,29 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Gerente gerente  = new Gerente("Pandora", 22, 4600);
+		Supervisor supervisor = new Supervisor("Safira", 26, 3500);
+		Vendedor vendedor = new Vendedor("Toretto", 30, 1800);
+		
+		System.out.println("Nome: " + gerente.nome + 
+							" Cargo: Gerente " +
+							" Idade: " + gerente.idade +
+							" Salário: " + gerente.salario +
+							" Bonificação: " + gerente.bonificacao());
+		System.out.println("-----------------------------------------");
+		
+		System.out.println("Nome: " + supervisor.nome + 
+							" Cargo: Supervisor " + 
+							" Idade: " + supervisor.idade +
+							" Salário: " + supervisor.salario +
+							" Bonificação: " + supervisor.bonificacao());
+		
+		System.out.println("Nome: " + vendedor.nome + 
+							" Cargo: Vendedor " + 
+							" Idade: " + vendedor.idade +
+							" Salário: " + vendedor.salario +
+							" Bonificação: " + vendedor.bonificacao());
+	}
+
+}

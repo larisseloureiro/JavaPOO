@@ -1,0 +1,47 @@
+package model;
+
+public abstract class Produto {
+ private String nome;
+ private Double preco;
+ private int qtd;
+ 
+ public Produto() {
+	 
+ }
+ 
+
+public Produto(String Nome, Double preco, int qtd) {
+	super();
+	System.out.println("kakka" + Nome);
+	this.nome = Nome;
+	this.preco = preco;
+	this.qtd = qtd;
+}
+
+
+public String getNome() {
+	System.out.println("llll" + nome);
+	return nome;
+}
+
+public void setNome(String Nome) {
+	this.nome = Nome;
+}
+
+public Double getPreco() {
+	return preco;
+}
+
+public void setPreco(Double preco) {
+	this.preco = preco;
+}
+
+public int getQtd() {
+	return qtd;
+}
+
+public void setQtd(int qtd) {
+	this.qtd = qtd;
+}
+ 
+}

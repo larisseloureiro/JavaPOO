@@ -1,0 +1,16 @@
+import java.util.Arrays;
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+		List<Pessoa> person = Arrays.asList(new Pessoa("João", 15), 
+											new Pessoa("Leandro",21),
+											new Pessoa("Paulo", 17),
+											new Pessoa("Jessica",18));
+	 person.sort((p1,p2) -> p1.getIdade() > p2.getIdade() ? 1 : -1);
+
+	System.out.println("Pessoa mais velha do grupo é: " + person.get(person.size()-1).getNome() + " de" + person.get(person.size()-1).getIdade());
+	}
+
+}

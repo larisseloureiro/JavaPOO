@@ -1,0 +1,36 @@
+import java.util.List;
+import java.util.Random;
+
+public class Guerreiro extends Personagem {
+	private List<String> habilidade;
+	
+	
+	public Guerreiro() {
+		super();
+	}
+	
+	//DELETAR O Q NAO USA
+	public Guerreiro(String nome, int vida, int mana, int inteligencia, int forca, int level, float xp,List<String> habilidade) {
+		super();
+		this.habilidade = habilidade;
+	}
+
+	@Override
+	public void lvlUp() {
+		this.setVida(getVida()+1);
+		this.setForca(getForca()+3);
+		
+	}
+	public Guerreiro(List<String> habilidade) {
+		super();
+		this.habilidade = habilidade;
+	}
+	public void attack() {
+		Random nRandom = new Random();
+		int valorGuerreiro = (getForca() * getLevel()) + nRandom.nextInt(300)+0;
+	}
+	public String aprenderHabilidade() {
+		return "";
+	}
+	
+}

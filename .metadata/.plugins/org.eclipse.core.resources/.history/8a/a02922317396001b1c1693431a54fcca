@@ -1,0 +1,45 @@
+package model;
+
+public class Livro {
+	private String autor, tema;
+	private int qntdPag;
+	
+	public Livro() {
+		
+	}
+	public Livro(String autor, String tema, int qntdPag) {
+		super();
+		this.autor = autor;
+		this.tema = tema;
+		this.qntdPag = qntdPag;
+	}
+	
+	
+	public String getAutor() {
+		return autor;
+	}
+
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+
+	public String getTema() {
+		return tema;
+	}
+
+	public void setTema(String tema) {
+		this.tema = tema;
+	}
+
+	public int getQntdPag() {
+		return qntdPag;
+	}
+
+	public void setQntdPag(int qntdPag) {
+		this.qntdPag = qntdPag;
+	}
+
+
+	
+	
+}

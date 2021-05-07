@@ -1,0 +1,16 @@
+package main;
+
+import model.Livro;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Livro l = new Livro();
+		l.setPreco(30.0);
+		l.setTema("comedia");
+		
+		System.out.println(l.calculaImposto());
+		
+	}
+
+}

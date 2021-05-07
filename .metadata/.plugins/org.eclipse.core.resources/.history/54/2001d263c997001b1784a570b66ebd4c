@@ -1,0 +1,34 @@
+import java.util.Arrays;
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// Ex04
+		List<Pessoa> person = Arrays.asList(new Pessoa("João", 15), new Pessoa("Leandro", 21), new Pessoa("Paulo", 17),
+											new Pessoa("Jessica", 18));
+		
+		System.out.println("--------------------------- Resultado Exercício 4 -------------------------------");
+		person.sort((p1, p2) -> p1.getIdade() > p2.getIdade() ? 1 : -1);
+		System.out.println("Pessoa mais velha do grupo é: " + person.get(person.size() - 1).getNome() + " de "
+				+ person.get(person.size() - 1).getIdade() + " anos.");
+
+		System.out.println("--------------------------- Resultado Exercício 5 -------------------------------");
+		
+		for(Pessoa pLista: person) {
+			System.out.println(pLista.getNome() + " idade: " + pLista.getIdade());
+		}
+		System.out.println();
+		System.out.println("Removidos com sucesso!");
+		System.out.println();
+		for(Pessoa pRemover : person) {
+			if(pRemover.getIdade() < 18) {
+				System.out.println(pRemover.getNome() + " tem a idade de " + pRemover.getIdade() + "," + " portando ele foi removido da lista!");
+			}
+		}
+
+	}
+
+	// Ex 05
+
+}

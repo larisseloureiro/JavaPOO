@@ -1,0 +1,108 @@
+package Ex01;
+
+public class Veiculo {
+
+	protected String Marca, Modelo, Placa, Cor; 
+	protected Float Km;
+	protected Boolean isLigado;
+	protected int litrosCombustivel, Velocidade;
+	protected Double Preco;
+	
+	
+	public Veiculo() {
+		
+	}
+	public String getMarca() {
+		return Marca;
+	}
+	public void setMarca(String Marca) {
+		this.Marca = Marca;
+	}
+	public String getModelo() {
+		return Modelo;
+	}
+	public void setModelo(String Modelo) {
+		this.Modelo = Modelo;
+	}
+	public String getPlaca() {
+		return Placa;
+	}
+	public void setPlaca(String Placa) {
+		this.Placa = Placa;
+	}
+	public String getCor() {
+		return Cor;
+	}
+	public void setCor(String Cor) {
+		this.Cor = Cor;
+	}
+	public Float getKm() {
+		return Km;
+	}
+	public void setKm(Float Km) {
+		this.Km = Km;
+	}
+	public Boolean getIsLigado() {
+		return isLigado;
+	}
+	public void setIsLigado(Boolean isLigado) {
+		this.isLigado = isLigado;
+	}
+	public int getLitrosCombustivel() {
+		return litrosCombustivel;
+	}
+	public void setLitrosCombustivel(int litrosCombustivel) {
+		this.litrosCombustivel = litrosCombustivel;
+	}
+	public int getVelocidade() {
+		return Velocidade;
+	}
+	public void setVelocidade(int Velocidade) {
+		this.Velocidade = Velocidade;
+	}
+	public Double getPreco() {
+		return Preco;
+	}
+	public void setPreco(Double Preco) {
+		this.Preco = Preco;
+	}
+	
+	public void acelerar() {
+		this.Velocidade += 20; 
+	}
+	public void abastecer(int Combustivel) {
+		if(Combustivel > 60) {
+			System.out.println("Tanque cheio, informe outro valor!");
+		} else {
+			this.litrosCombustivel += Combustivel;
+		}
+	}
+	public void frear() { 
+		if(Velocidade == 0) {
+			System.out.println("Veículo se encontra parado!");
+		} else {
+			this.Velocidade -= 20;
+		}
+	}
+	public void pintar(String Cor) {
+		this.Cor = Cor;
+	}
+	public void ligar() {
+		if(this.isLigado = false) {
+			System.out.println("Veículo desligado!");
+		} else {
+			System.out.println("Veículo ligado!");
+		}
+	}
+	public void desligar() {
+		if(this.isLigado) {
+			if(this.Velocidade > 0) {
+				System.out.println("");
+			}
+		} else {
+			this.isLigado = false;
+		}
+	}
+	
+	
+} 

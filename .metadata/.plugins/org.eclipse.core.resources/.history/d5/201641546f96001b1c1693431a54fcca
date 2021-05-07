@@ -1,0 +1,21 @@
+package Ex01;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Veiculo veic = new Veiculo();
+		
+		veic.pintar("Prata");
+		veic.ligar();
+		veic.acelerar();
+		veic.acelerar();
+		veic.desligar();
+		veic.frear();
+		veic.frear();
+		veic.desligar();
+		veic.abastecer(61);
+		veic.abastecer(60);
+		
+	}
+
+}
